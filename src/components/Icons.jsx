@@ -2,7 +2,7 @@ import React from 'react'
 
 const Icons = (props) => {
   return (
-    <span class="material-symbols-outlined">{props.item}</span>
+    <span className="material-symbols-outlined font-normal text-lg text-gray-700">{props.item}</span>
   )
 }
 
