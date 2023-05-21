@@ -1,6 +1,6 @@
 import Navbar from './components/navbar/Navbar';
 import ToolBox from './components/toolBox/ToolBox';
-import EditorScreen from './components/editorScreen/EditorScreen';
+import EditorScreen from './components/editorSection/EditorSection';
 
 function App() {
   return (
