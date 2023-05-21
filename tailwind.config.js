@@ -8,6 +8,9 @@ module.exports = {
       colors: {
         text:"#202124",
         toolbox:"#edf2fa",
+        toolboxHover:"#e5e7eb",
+        editorPrimary:"#fff",
+        editorSecondary:"#f9fbfd",
     },
   },
   },
