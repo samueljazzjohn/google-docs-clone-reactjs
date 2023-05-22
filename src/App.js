@@ -2,6 +2,10 @@ import Navbar from './components/navbar/Navbar';
 import ToolBox from './components/toolBox/ToolBox';
 import EditorScreen from './components/editorSection/EditorSection';
 
+/**
+ * This is the Application component
+ * @component
+ */
 function App() {
   return (
     <>

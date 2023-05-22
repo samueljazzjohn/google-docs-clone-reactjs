@@ -1,5 +1,9 @@
 import React from 'react'
 
+/**
+ * Represents the Editor screen.
+ * @component
+ */
 const EditorScreen = () => {
   return (
     <>

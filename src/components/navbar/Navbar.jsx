@@ -4,6 +4,11 @@ import ProfileBar from './ProfileBar'
 import SettingsBar from './SettingsBar'
 import TitleBar from './TitleBar'
 
+/**
+ * This is the navbar component that contain all the settings and profile and other options for the user
+ * @component
+ */
+
 const Navbar = () => {
   return (
     <>

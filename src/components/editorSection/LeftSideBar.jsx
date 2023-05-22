@@ -1,9 +1,15 @@
 import React, { useState } from "react";
 
+/**
+ * Represents the Left side bar of the editor section.
+ * @component
+ */
 const LeftSideBar = () => {
+  // This state is used to toggle the visibility of the left side bar content
   const [visiblale, setVisible] = useState(true);
   const [summary, setSummary] = useState(false);
 
+  // This function is used to toggle the visibility of the left side bar content
   const handleVisible = () => {
     setVisible(!visiblale);
   };

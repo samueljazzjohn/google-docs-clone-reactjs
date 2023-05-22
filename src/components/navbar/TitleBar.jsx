@@ -1,12 +1,18 @@
 import React, { useEffect, useRef } from "react";
 
+/**
+ * Represents the title bar of the document which contains the title of the document and some icons.
+ * @component
+ */
 const TitleBar = () => {
+    // This is the reference to the document title element
     const inputRef = useRef(null);
 
     useEffect(() => {
       adjustInputWidth()
     }, []);
 
+    // This function adjusts the width of the input element according to the length of the text
     const adjustInputWidth = () => {
         if (inputRef.current) {
           const inputElement = inputRef.current;

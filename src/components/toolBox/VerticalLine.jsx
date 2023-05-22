@@ -1,5 +1,10 @@
 import React from 'react'
 
+/**
+ * Represents the vertical line in the tool box
+ * @component
+ */
+
 const VerticalLine = () => {
   return (
     <>

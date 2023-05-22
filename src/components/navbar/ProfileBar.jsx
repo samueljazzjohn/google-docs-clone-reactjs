@@ -1,5 +1,10 @@
 import React from "react";
 
+/**
+ * Represents some profile related options like profile icons share buttons, etc.
+ * @component
+ */
+
 const ProfileBar = () => {
   return (
     <>

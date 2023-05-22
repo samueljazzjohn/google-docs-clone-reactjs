@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Icons from "../Icons";
+import Icons from "./Icons";
 import VerticalLine from "../toolBox/VerticalLine";
 import "./ToolBox.css";
 
@@ -16,46 +16,62 @@ const textOptions = [
   "Heading 6",
 ];
 
+/**
+ * Represents the toolbox for the editor screen
+ * @component
+ */
 const ToolBox = () => {
+    // This is for managing the screen width
   const [screenDropdown, setScreenDropdown] = useState(false);
   const [selectedOption, setSelectedOption] = useState(options[0]);
   
+//   This states are for managing the background color for bold,italics and underline
   const [bold, setBold] = useState(false)
   const [italic, setItalic] = useState(false)
   const [underline, setUnderline] = useState(false)
 
+//   This is for managing text variant dropdown
   const [textDropdown,setTextDropdown] = useState(false)
   const [selectedText,setSelectedText] = useState(textOptions[0])
 
+//   This is for managing the text size
   const [textSize, setTextSize ] = useState(10)
 
+//   This function is for handling the screen dropdown
   const handleScreenDropdown = () => {
     setScreenDropdown(!screenDropdown);
   };
 
+
+// this function is for handling the option select
   const handleOptionSelect = (option) => {
     console.log("Selected option:", option);
     setSelectedOption(option);
     setScreenDropdown(false);
   };
 
+//   This function is for handling the text variant dropdown
   const handleTextDropdown = ()=>{
     setTextDropdown(!textDropdown)
   }
 
+//   This function is for handling the text variant select
   const handleTextOptionsSelect=(option)=>{
     setSelectedText(option)
     setTextDropdown(false)
   } 
 
+//   This function is for incrementing the text size
   const incrementTextSize = ()=>{
     setTextSize(textSize+1)
   }
 
+//   This function is for decrementing the text size
   const decrementTextSize = ()=>{
     setTextSize(textSize-1)
   }
 
+//   These functions are for handling the bold,italic and underline
   const handleBold = ()=>{
     setBold(!bold)
     }
@@ -113,17 +129,6 @@ const ToolBox = () => {
           </div>
 
           <VerticalLine />
-          {/* <div className="hover:bg-toolboxHover cursor-pointer px-1 py-[2px] rounded-md">
-            <select
-              name="textVariant"
-              id="textVariant"
-              className="bg-toolbox hover:bg-toolboxHover text-[14px] focus:outline-none ring-0 ring-transparent"
-            >
-              {textOptions.map((option) => (
-                <option value={option}>{option}</option>
-              ))}
-            </select>
-          </div> */}
           <div
             className="hover:bg-toolboxHover cursor-pointer flex justify-center items-center px-2 rounded-md"
             onClick={handleTextDropdown}
